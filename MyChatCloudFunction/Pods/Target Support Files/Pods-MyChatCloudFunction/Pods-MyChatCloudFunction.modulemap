@@ -1,0 +1,6 @@
+framework module Pods_MyChatCloudFunction {
+  umbrella header "Pods-MyChatCloudFunction-umbrella.h"
+
+  export *
+  module * { export * }
+}
