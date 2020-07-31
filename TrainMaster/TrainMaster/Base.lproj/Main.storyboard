@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="TrainMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-Ys-oKt">
+                                <rect key="frame" x="20" y="954" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4wa-hP-vo4"/>
+                                    <constraint firstAttribute="width" constant="50" id="JQq-Hf-4pf"/>
+                                </constraints>
+                                <state key="normal" image="renfe_logo"/>
+                                <connections>
+                                    <action selector="onMetro:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jae-ba-m1o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="aTX-Ys-oKt" secondAttribute="bottom" constant="20" id="Uv6-qv-Rwc"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="U0K-SW-4ec" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="aTX-Ys-oKt" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="ahW-Pv-kEC"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <segue destination="1xX-GM-1m3" kind="presentation" identifier="renfeView" modalPresentationStyle="fullScreen" id="WLn-T9-CRe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="137.6953125"/>
+        </scene>
+        <!--Renfe View Controller-->
+        <scene sceneID="d3D-lU-KwY">
+            <objects>
+                <viewController id="1xX-GM-1m3" customClass="renfeViewController" customModule="TrainMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPI-co-d12">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phs-oG-WUP">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCv-g0-aI8">
+                                <rect key="frame" x="20" y="972" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="DXP-xQ-xXY"/>
+                                    <constraint firstAttribute="height" constant="32" id="Ub2-Ue-YbE"/>
+                                </constraints>
+                                <state key="normal" image="metro_logo"/>
+                                <connections>
+                                    <action selector="onMetro:" destination="1xX-GM-1m3" eventType="touchUpInside" id="Amq-2b-T8J"/>
+                                    <action selector="onMetro:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jeP-gU-zI1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Phs-oG-WUP" firstAttribute="bottom" secondItem="tPI-co-d12" secondAttribute="bottom" id="Egb-8u-hjS"/>
+                            <constraint firstItem="rCv-g0-aI8" firstAttribute="leading" secondItem="fSV-oV-Dbv" secondAttribute="leading" constant="20" id="MTA-py-P4D"/>
+                            <constraint firstItem="Phs-oG-WUP" firstAttribute="top" secondItem="tPI-co-d12" secondAttribute="top" id="b6x-SH-wFG"/>
+                            <constraint firstItem="fSV-oV-Dbv" firstAttribute="bottom" secondItem="rCv-g0-aI8" secondAttribute="bottom" constant="20" id="eYw-0d-xWd"/>
+                            <constraint firstItem="Phs-oG-WUP" firstAttribute="leading" secondItem="fSV-oV-Dbv" secondAttribute="leading" id="z3N-3N-fzA"/>
+                            <constraint firstItem="Phs-oG-WUP" firstAttribute="trailing" secondItem="fSV-oV-Dbv" secondAttribute="trailing" id="z6a-42-cwY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fSV-oV-Dbv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rB5-ma-UMy"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Phs-oG-WUP" id="mm7-Y1-ano"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTD-wu-5NP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="137.6953125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="metro_logo" width="1200" height="750"/>
+        <image name="renfe_logo" width="1200" height="1200"/>
+    </resources>
+</document>
