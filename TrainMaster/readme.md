@@ -1,6 +1,6 @@
 # TrainMaster
 
-Esta aplicación permtie la visualización del mapa de Metro y Renfe el cual se muestra gracias a RA sobre la tarjeta de TRansportes de la Comunidad de Madrid.
+Esta aplicación permtie la visualización del mapa de Metro y Renfe el cual se muestra gracias a RA sobre la tarjeta de Transportes de la Comunidad de Madrid.
 
 ## Hitos
 
