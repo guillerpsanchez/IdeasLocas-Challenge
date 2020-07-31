@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WAD-I4-iJp">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="8mu-5Y-pxQ">
+            <objects>
+                <viewController id="WAD-I4-iJp" customClass="cameraViewController" customModule="SpyRA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Oa-RG-zDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzj-Ej-39N">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkL-qk-6HM">
+                                <rect key="frame" x="362" y="945" width="44" height="44"/>
+                                <state key="normal" image="shutter_icon"/>
+                                <connections>
+                                    <action selector="onPhotoTaken:" destination="WAD-I4-iJp" eventType="touchUpInside" id="zf1-3h-Lda"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcB-Gj-pRX">
+                                <rect key="frame" x="20" y="970" width="21" height="22"/>
+                                <state key="normal" image="arkit" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickARButton:" destination="WAD-I4-iJp" eventType="touchUpInside" id="BZF-jn-vdX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wzj-Ej-39N" firstAttribute="trailing" secondItem="Wlg-Ay-jDo" secondAttribute="trailing" id="3lS-0V-lzR"/>
+                            <constraint firstItem="wzj-Ej-39N" firstAttribute="top" secondItem="Wlg-Ay-jDo" secondAttribute="top" id="DfG-dq-LW3"/>
+                            <constraint firstItem="wzj-Ej-39N" firstAttribute="bottom" secondItem="Wlg-Ay-jDo" secondAttribute="bottom" id="SaC-cp-LkK"/>
+                            <constraint firstItem="qcB-Gj-pRX" firstAttribute="leading" secondItem="Wlg-Ay-jDo" secondAttribute="leading" constant="20" id="UcE-mE-3IJ"/>
+                            <constraint firstItem="Wlg-Ay-jDo" firstAttribute="bottom" secondItem="qcB-Gj-pRX" secondAttribute="bottom" constant="32" id="gxC-sg-Ml8"/>
+                            <constraint firstItem="Wlg-Ay-jDo" firstAttribute="bottom" secondItem="YkL-qk-6HM" secondAttribute="bottom" constant="35" id="pnS-LF-3Ea"/>
+                            <constraint firstItem="wzj-Ej-39N" firstAttribute="leading" secondItem="Wlg-Ay-jDo" secondAttribute="leading" id="rbQ-2s-2l4"/>
+                            <constraint firstItem="YkL-qk-6HM" firstAttribute="centerX" secondItem="8Oa-RG-zDZ" secondAttribute="centerX" id="sET-CQ-Zlb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wlg-Ay-jDo"/>
+                    </view>
+                    <connections>
+                        <outlet property="showCamera" destination="wzj-Ej-39N" id="qYC-TP-IAY"/>
+                        <segue destination="mBA-id-4dI" kind="show" identifier="ARView" id="rYf-A1-Pe8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Euk-rH-Uqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="867"/>
+        </scene>
+        <!--Rcamera View Controller-->
+        <scene sceneID="3Hs-Pn-AWJ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="mBA-id-4dI" customClass="ARcameraViewController" customModule="SpyRA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLp-z3-FmC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNX-8i-sHm">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-J2-UAX">
+                                <rect key="frame" x="362" y="946" width="44" height="44"/>
+                                <state key="normal" image="shutter_icon"/>
+                                <connections>
+                                    <action selector="onPhotoTaken:" destination="WAD-I4-iJp" eventType="touchUpInside" id="hQp-W8-b8t"/>
+                                    <action selector="onPhotoTaken:" destination="mBA-id-4dI" eventType="touchUpInside" id="ipx-0u-kfO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q4-gF-FVu">
+                                <rect key="frame" x="20" y="971" width="24" height="22"/>
+                                <state key="normal" image="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickNormalCamera:" destination="mBA-id-4dI" eventType="touchUpInside" id="7bH-ER-FtP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Q4-gF-FVu" firstAttribute="leading" secondItem="DEH-2K-o3Z" secondAttribute="leading" constant="20" id="1ht-BX-9Ex"/>
+                            <constraint firstItem="eNX-8i-sHm" firstAttribute="trailing" secondItem="DEH-2K-o3Z" secondAttribute="trailing" id="3hE-Zb-McR"/>
+                            <constraint firstItem="eNX-8i-sHm" firstAttribute="leading" secondItem="DEH-2K-o3Z" secondAttribute="leading" id="8Ck-6Z-CJY"/>
+                            <constraint firstItem="eNX-8i-sHm" firstAttribute="top" secondItem="DEH-2K-o3Z" secondAttribute="top" id="Aku-Nk-myW"/>
+                            <constraint firstItem="DEH-2K-o3Z" firstAttribute="bottom" secondItem="7Q4-gF-FVu" secondAttribute="bottom" constant="31" id="Yuy-zc-TqP"/>
+                            <constraint firstItem="eNX-8i-sHm" firstAttribute="bottom" secondItem="DEH-2K-o3Z" secondAttribute="bottom" id="f3Z-gS-JyP"/>
+                            <constraint firstItem="DEH-2K-o3Z" firstAttribute="bottom" secondItem="JGo-J2-UAX" secondAttribute="bottom" constant="34" id="mvB-dV-Psw"/>
+                            <constraint firstItem="JGo-J2-UAX" firstAttribute="centerX" secondItem="BLp-z3-FmC" secondAttribute="centerX" id="wHl-ID-M2D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DEH-2K-o3Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l1i-hU-GoV"/>
+                    <connections>
+                        <outlet property="showCamera" destination="eNX-8i-sHm" id="H0Q-8F-f40"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwg-hJ-y34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620.3125" y="856.640625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arkit" catalog="system" width="128" height="128"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="shutter_icon" width="44" height="44"/>
+    </resources>
+</document>
