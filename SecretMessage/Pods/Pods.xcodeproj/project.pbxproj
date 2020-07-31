@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04208E574B8A3FBEB914F997509C5299 /* BaseTypes+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF9847E179831A671C7374DC0B6DF1D /* BaseTypes+Extensions.swift */; };
+		066FD08EF5D9078C9E733D2DFF581651 /* LocationAnnotationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AE525156F7D847AE4B108A196BB4 /* LocationAnnotationNode.swift */; };
+		06AE10556CCDAB1C8BAB1253F0137A03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA272986C62108D971D1681FF887203E /* CoreLocation.framework */; };
+		14129E30C55A23A4798CB5645D2F2530 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */; };
+		175518AB4723AA996812B2F20760A158 /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E24EBF927E31F4522BF504F12A1579 /* SceneLocationEstimate+Extensions.swift */; };
+		1DA384FB7CDA6A89664EFC29290F51FC /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A187CD71454C1FA48CE3CC9375CB613E /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E1379D2CF8C3FF935F8D88B2E22C061 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
+		275ABEB51B3E6CFB1F99DC846CF08578 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586DC37EB58759BB9F25B127A2B75C4B /* RNCryptor.swift */; };
+		36AC8E4868BD5C97410702782309235B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
+		41BE9347A5E9DD88A94C29A25193FAE6 /* SceneLocationView+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D62BC987D33324DE21CE04AF75DAFA /* SceneLocationView+ARSCNViewDelegate.swift */; };
+		41F024CE6F5E5CC67308ADD03CB4EEB9 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2A4546AC76B25A4160F4C732E7796 /* SCNNode+Extensions.swift */; };
+		462B4A6FEC5638E4FF676C20D4D8206C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9198131727667F5A36AEE40099328680 /* UIKit.framework */; };
+		49A3EE3048F4C134E58733507823B611 /* SceneLocationViewEstimateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A11E658006B3F3E9C78C44AB7080F7 /* SceneLocationViewEstimateDelegate.swift */; };
+		4AAE0F3B409B86906FF07BB9B7AD995D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C89E710E414C9F34DCCF445D3488A /* LocationManager.swift */; };
+		4F320F5D6C312452A344A64421EDE07E /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2228CE9DD4C1B1A5CD4220B5E08364 /* CLLocation+Extensions.swift */; };
+		56DD16E3C76AD333FBC0DADE33817292 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */; };
+		5B465B4C6DD51A5B4ED603318539E4D8 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */; };
+		61056C6EFFF75EB7F6B6F09C9497BD60 /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C00A327B9AF2BD23D89890F0651692D /* ARCL-dummy.m */; };
+		6820B3638809F3914194216BB5A3C2A2 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E35D8AF33476A647745793CA290C814 /* RNCryptor-dummy.m */; };
+		6841F73E84D853E5D8D167C735908F74 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703AB0DD4758C6E1DF19BFB1E109BD4C /* SceneLocationEstimate.swift */; };
+		752831D33A377197EB5026D4D597B60B /* ScalingScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC840B504A424E58AD65A75498EFC00F /* ScalingScheme.swift */; };
+		7BA73522DF205C8C8123142B55A66EE2 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F2939458D8DE768536CE604195A1C /* FloatingPoint+Radians.swift */; };
+		7BD57C52C8BE3A84AA0B2EBFAE0D9704 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7FF08CDF23CBE4FDB79267788C5290 /* CGPoint+Extensions.swift */; };
+		7C781B781A43BF12E389B0E56F8B02B0 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C364BC5BDFBAED90824A60DBBA8CBA /* SCNVector3+Extensions.swift */; };
+		87F273930381D64A3976A1333383C096 /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6DFF69DEE37120B1673964B6DE2B65 /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17AF6BEC2C03C7D8817BDC77D0ABCC8 /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088CE8087271F70AB3899F2B844FCE4 /* SceneLocationView.swift */; };
+		BF52365B4F8F2C456C5F8251FE0E7577 /* AttributedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE54ACE0D3EB2CFC5F496CAF6201E4F /* AttributedType.swift */; };
+		C5C07FBE24EF645D27640D921A786FD4 /* Pods-SecretMessage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2704E01B7CF2B1463B02ACE67AAB7D9B /* Pods-SecretMessage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C90E2A2B47EE101E2B491A592DC42137 /* ARKit_CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1981BFF624B7E153E7BE968ADC70A8 /* ARKit_CoreLocation.swift */; };
+		CCE20801F233D2A46FAF52EB54EA62D0 /* SceneLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74544627599180BF72168121192A319A /* SceneLocationManager.swift */; };
+		D6843C7882EF12C9D152AAB3E48C64A4 /* Pods-SecretMessage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A8574FA041CF223076B8B106DD7977 /* Pods-SecretMessage-dummy.m */; };
+		D871152B03BA39E280878D06BB3DBFBA /* PolylineNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6728F4BA5DDC28C3BDE16141789A879 /* PolylineNode.swift */; };
+		F812FD15FA459C7339E47E72A9691C6F /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26451706B6CF2467DF24309C43902ADE /* LocationNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82B894AC98F352E73542A92595A45700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CCA2AD142519DF6FED0979BACBC149;
+			remoteInfo = RNCryptor;
+		};
+		9F7B4D7D96C8C65AFB261AE75ECDA8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB32E97F940371D391F6B8FB4F24AC15;
+			remoteInfo = ARCL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E24EBF927E31F4522BF504F12A1579 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		08F2A4546AC76B25A4160F4C732E7796 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		0BE54ACE0D3EB2CFC5F496CAF6201E4F /* AttributedType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AttributedType.swift; path = "Sources/ARKit-CoreLocation/Util/AttributedType.swift"; sourceTree = "<group>"; };
+		0C00A327B9AF2BD23D89890F0651692D /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
+		0D4E66365E434748EE3EECC3FCD5AEA3 /* Pods-SecretMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecretMessage.release.xcconfig"; sourceTree = "<group>"; };
+		0EFF2B338F3286E7CA2E60D5F92185B5 /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RNCryptor.modulemap; sourceTree = "<group>"; };
+		1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A7E813F16289FE37A5EE8DBC9F89332 /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARCL.modulemap; sourceTree = "<group>"; };
+		1AD5738FB71E7683337DD5C10FBE3269 /* ARCL-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ARCL-Info.plist"; sourceTree = "<group>"; };
+		2341D35D7242F3EE15AB4B415BDC13D5 /* RNCryptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.release.xcconfig; sourceTree = "<group>"; };
+		25D62BC987D33324DE21CE04AF75DAFA /* SceneLocationView+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationView+ARSCNViewDelegate.swift"; path = "Sources/ARKit-CoreLocation/SceneLocationView+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		26451706B6CF2467DF24309C43902ADE /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationNode.swift"; sourceTree = "<group>"; };
+		2704E01B7CF2B1463B02ACE67AAB7D9B /* Pods-SecretMessage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecretMessage-umbrella.h"; sourceTree = "<group>"; };
+		2E1981BFF624B7E153E7BE968ADC70A8 /* ARKit_CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARKit_CoreLocation.swift; path = "Sources/ARKit-CoreLocation/ARKit_CoreLocation.swift"; sourceTree = "<group>"; };
+		2E2228CE9DD4C1B1A5CD4220B5E08364 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		2FE62ABCE3D358BC37CFDB2C0A687D0E /* Pods-SecretMessage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecretMessage-Info.plist"; sourceTree = "<group>"; };
+		5006D63A7520717719E7259A2254572D /* RNCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RNCryptor-Info.plist"; sourceTree = "<group>"; };
+		586DC37EB58759BB9F25B127A2B75C4B /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RNCryptor.swift; path = Sources/RNCryptor/RNCryptor.swift; sourceTree = "<group>"; };
+		5D95B937E70B8AE9FC4F4D9CC4CD6A79 /* Pods_SecretMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SecretMessage.framework; path = "Pods-SecretMessage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63CE62644963D5BF0494FDDF24A6ED5C /* Pods-SecretMessage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecretMessage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C7FF08CDF23CBE4FDB79267788C5290 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		703AB0DD4758C6E1DF19BFB1E109BD4C /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
+		7088CE8087271F70AB3899F2B844FCE4 /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "Sources/ARKit-CoreLocation/SceneLocationView.swift"; sourceTree = "<group>"; };
+		72052D3FEAE977A3A21F083046D8012C /* ARCL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.release.xcconfig; sourceTree = "<group>"; };
+		74544627599180BF72168121192A319A /* SceneLocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/SceneLocationManager.swift"; sourceTree = "<group>"; };
+		7FF0ECFA230F630788132610DBE58EB9 /* RNCryptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.debug.xcconfig; sourceTree = "<group>"; };
+		844C89E710E414C9F34DCCF445D3488A /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "Sources/ARKit-CoreLocation/Location Manager/LocationManager.swift"; sourceTree = "<group>"; };
+		89274800D96A2C82315A3935F15BB105 /* ARCL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.debug.xcconfig; sourceTree = "<group>"; };
+		8B9F2939458D8DE768536CE604195A1C /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "Sources/ARKit-CoreLocation/Extensions/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		8C7B22B0CE6D594F10E675DA744A9F86 /* Pods-SecretMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecretMessage.debug.xcconfig"; sourceTree = "<group>"; };
+		9070AE525156F7D847AE4B108A196BB4 /* LocationAnnotationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationAnnotationNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/LocationAnnotationNode.swift"; sourceTree = "<group>"; };
+		90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		9198131727667F5A36AEE40099328680 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		97A3B2EB35B7AC18D6D24544CC7CE8CB /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
+		9CC3549D17369A09C75C0EEF401E18A8 /* Pods-SecretMessage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecretMessage-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E35D8AF33476A647745793CA290C814 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		9EF9847E179831A671C7374DC0B6DF1D /* BaseTypes+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseTypes+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/BaseTypes+Extensions.swift"; sourceTree = "<group>"; };
+		A187CD71454C1FA48CE3CC9375CB613E /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		A6728F4BA5DDC28C3BDE16141789A879 /* PolylineNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolylineNode.swift; path = "Sources/ARKit-CoreLocation/Nodes/PolylineNode.swift"; sourceTree = "<group>"; };
+		B9313EADD2F66744EE89C0351D4ADC2A /* Pods-SecretMessage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecretMessage-frameworks.sh"; sourceTree = "<group>"; };
+		C5A11E658006B3F3E9C78C44AB7080F7 /* SceneLocationViewEstimateDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationViewEstimateDelegate.swift; path = "Sources/ARKit-CoreLocation/SceneLocationViewEstimateDelegate.swift"; sourceTree = "<group>"; };
+		C7ADEE321186A59406F16630332B9832 /* ARCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCL.framework; path = ARCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC840B504A424E58AD65A75498EFC00F /* ScalingScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingScheme.swift; path = "Sources/ARKit-CoreLocation/Nodes/ScalingScheme.swift"; sourceTree = "<group>"; };
+		CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9C364BC5BDFBAED90824A60DBBA8CBA /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "Sources/ARKit-CoreLocation/Extensions/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		DA272986C62108D971D1681FF887203E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RNCryptor.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A8574FA041CF223076B8B106DD7977 /* Pods-SecretMessage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecretMessage-dummy.m"; sourceTree = "<group>"; };
+		F9FC38143FA8CCED4589C041B87990B2 /* Pods-SecretMessage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecretMessage.modulemap"; sourceTree = "<group>"; };
+		FF6DFF69DEE37120B1673964B6DE2B65 /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
+		FFB3FD2A4A5135E8AC26544BD0DAA59C /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		142AE6EB8407191844074817A18C2723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AE10556CCDAB1C8BAB1253F0137A03 /* CoreLocation.framework in Frameworks */,
+				1E1379D2CF8C3FF935F8D88B2E22C061 /* Foundation.framework in Frameworks */,
+				14129E30C55A23A4798CB5645D2F2530 /* MapKit.framework in Frameworks */,
+				5B465B4C6DD51A5B4ED603318539E4D8 /* SceneKit.framework in Frameworks */,
+				462B4A6FEC5638E4FF676C20D4D8206C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB3C72DEEB6337778432A2375C2A073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DD16E3C76AD333FBC0DADE33817292 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D641814EE8177481B49C1DA9104C05C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AC8E4868BD5C97410702782309235B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E6A90F0FDC4E243F854FF09FA8E4766 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				586DC37EB58759BB9F25B127A2B75C4B /* RNCryptor.swift */,
+				BD1DE19D424EC3680395F789CF59BF7C /* Support Files */,
+			);
+			name = RNCryptor;
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		1ED26E24DC23DFD3E96689ECE3C50815 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B72181BE8F2B850A02E016D4EAE910FF /* Pods-SecretMessage */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5A3F30C58191A64D12509CD5582B0C5E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA272986C62108D971D1681FF887203E /* CoreLocation.framework */,
+				CE1C87DD65575F3BFF2A2EB472E5344D /* Foundation.framework */,
+				1286BD9CC3F1431DD7E6D631FBB111F5 /* MapKit.framework */,
+				90E91DF3DD80E18E4420D8BA5480A48B /* SceneKit.framework */,
+				9198131727667F5A36AEE40099328680 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76218E87996DF50F855311BE4E760CEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A7E813F16289FE37A5EE8DBC9F89332 /* ARCL.modulemap */,
+				0C00A327B9AF2BD23D89890F0651692D /* ARCL-dummy.m */,
+				1AD5738FB71E7683337DD5C10FBE3269 /* ARCL-Info.plist */,
+				97A3B2EB35B7AC18D6D24544CC7CE8CB /* ARCL-prefix.pch */,
+				FF6DFF69DEE37120B1673964B6DE2B65 /* ARCL-umbrella.h */,
+				89274800D96A2C82315A3935F15BB105 /* ARCL.debug.xcconfig */,
+				72052D3FEAE977A3A21F083046D8012C /* ARCL.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ARCL";
+			sourceTree = "<group>";
+		};
+		7A22C2B7FA56F932CC50AA406EA2F0A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7ADEE321186A59406F16630332B9832 /* ARCL.framework */,
+				5D95B937E70B8AE9FC4F4D9CC4CD6A79 /* Pods_SecretMessage.framework */,
+				F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B72181BE8F2B850A02E016D4EAE910FF /* Pods-SecretMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC38143FA8CCED4589C041B87990B2 /* Pods-SecretMessage.modulemap */,
+				63CE62644963D5BF0494FDDF24A6ED5C /* Pods-SecretMessage-acknowledgements.markdown */,
+				9CC3549D17369A09C75C0EEF401E18A8 /* Pods-SecretMessage-acknowledgements.plist */,
+				F9A8574FA041CF223076B8B106DD7977 /* Pods-SecretMessage-dummy.m */,
+				B9313EADD2F66744EE89C0351D4ADC2A /* Pods-SecretMessage-frameworks.sh */,
+				2FE62ABCE3D358BC37CFDB2C0A687D0E /* Pods-SecretMessage-Info.plist */,
+				2704E01B7CF2B1463B02ACE67AAB7D9B /* Pods-SecretMessage-umbrella.h */,
+				8C7B22B0CE6D594F10E675DA744A9F86 /* Pods-SecretMessage.debug.xcconfig */,
+				0D4E66365E434748EE3EECC3FCD5AEA3 /* Pods-SecretMessage.release.xcconfig */,
+			);
+			name = "Pods-SecretMessage";
+			path = "Target Support Files/Pods-SecretMessage";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A3F30C58191A64D12509CD5582B0C5E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1DE19D424EC3680395F789CF59BF7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EFF2B338F3286E7CA2E60D5F92185B5 /* RNCryptor.modulemap */,
+				9E35D8AF33476A647745793CA290C814 /* RNCryptor-dummy.m */,
+				5006D63A7520717719E7259A2254572D /* RNCryptor-Info.plist */,
+				FFB3FD2A4A5135E8AC26544BD0DAA59C /* RNCryptor-prefix.pch */,
+				A187CD71454C1FA48CE3CC9375CB613E /* RNCryptor-umbrella.h */,
+				7FF0ECFA230F630788132610DBE58EB9 /* RNCryptor.debug.xcconfig */,
+				2341D35D7242F3EE15AB4B415BDC13D5 /* RNCryptor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
+			sourceTree = "<group>";
+		};
+		C3E3810C4E4DC497ABAE8101D7C53EC8 /* ARCL */ = {
+			isa = PBXGroup;
+			children = (
+				2E1981BFF624B7E153E7BE968ADC70A8 /* ARKit_CoreLocation.swift */,
+				0BE54ACE0D3EB2CFC5F496CAF6201E4F /* AttributedType.swift */,
+				9EF9847E179831A671C7374DC0B6DF1D /* BaseTypes+Extensions.swift */,
+				6C7FF08CDF23CBE4FDB79267788C5290 /* CGPoint+Extensions.swift */,
+				2E2228CE9DD4C1B1A5CD4220B5E08364 /* CLLocation+Extensions.swift */,
+				8B9F2939458D8DE768536CE604195A1C /* FloatingPoint+Radians.swift */,
+				9070AE525156F7D847AE4B108A196BB4 /* LocationAnnotationNode.swift */,
+				844C89E710E414C9F34DCCF445D3488A /* LocationManager.swift */,
+				26451706B6CF2467DF24309C43902ADE /* LocationNode.swift */,
+				A6728F4BA5DDC28C3BDE16141789A879 /* PolylineNode.swift */,
+				CC840B504A424E58AD65A75498EFC00F /* ScalingScheme.swift */,
+				703AB0DD4758C6E1DF19BFB1E109BD4C /* SceneLocationEstimate.swift */,
+				08E24EBF927E31F4522BF504F12A1579 /* SceneLocationEstimate+Extensions.swift */,
+				74544627599180BF72168121192A319A /* SceneLocationManager.swift */,
+				7088CE8087271F70AB3899F2B844FCE4 /* SceneLocationView.swift */,
+				25D62BC987D33324DE21CE04AF75DAFA /* SceneLocationView+ARSCNViewDelegate.swift */,
+				C5A11E658006B3F3E9C78C44AB7080F7 /* SceneLocationViewEstimateDelegate.swift */,
+				08F2A4546AC76B25A4160F4C732E7796 /* SCNNode+Extensions.swift */,
+				D9C364BC5BDFBAED90824A60DBBA8CBA /* SCNVector3+Extensions.swift */,
+				76218E87996DF50F855311BE4E760CEA /* Support Files */,
+			);
+			name = ARCL;
+			path = ARCL;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				E95642DA4AB4786545361331AB290E77 /* Pods */,
+				7A22C2B7FA56F932CC50AA406EA2F0A9 /* Products */,
+				1ED26E24DC23DFD3E96689ECE3C50815 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E95642DA4AB4786545361331AB290E77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3810C4E4DC497ABAE8101D7C53EC8 /* ARCL */,
+				1E6A90F0FDC4E243F854FF09FA8E4766 /* RNCryptor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12ECAFAA0446553A06F671713D5E366F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA384FB7CDA6A89664EFC29290F51FC /* RNCryptor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA04B232AF0487CA3F13412E719C143 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F273930381D64A3976A1333383C096 /* ARCL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54F9B52E5D05FBE50AA16745F4E2907 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C07FBE24EF645D27640D921A786FD4 /* Pods-SecretMessage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244C8495B4807405AC4E43E3331BC3A5 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildPhases = (
+				12ECAFAA0446553A06F671713D5E366F /* Headers */,
+				EEEEB8560A2AE3CD4C881C83C69E384E /* Sources */,
+				D641814EE8177481B49C1DA9104C05C3 /* Frameworks */,
+				859C8E8E4FAA8DADC5BD9446520301C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNCryptor;
+			productName = RNCryptor;
+			productReference = F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B34AFA0703DE753BC623B15919F816DC /* Pods-SecretMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4199054F06045DD4CBB6EB6BBC98EA5D /* Build configuration list for PBXNativeTarget "Pods-SecretMessage" */;
+			buildPhases = (
+				E54F9B52E5D05FBE50AA16745F4E2907 /* Headers */,
+				1960E6A7960A7B2EA1A0C5FE6E72DF67 /* Sources */,
+				5EB3C72DEEB6337778432A2375C2A073 /* Frameworks */,
+				614257DC32F66DDBBD97A53DE3BD155D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60D6C257FA7FA1AD8D49BAC8582D46D5 /* PBXTargetDependency */,
+				D1B418CA0B2D4671056BC4B352905375 /* PBXTargetDependency */,
+			);
+			name = "Pods-SecretMessage";
+			productName = "Pods-SecretMessage";
+			productReference = 5D95B937E70B8AE9FC4F4D9CC4CD6A79 /* Pods_SecretMessage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658276A62EBF92155929002D7710C1C3 /* Build configuration list for PBXNativeTarget "ARCL" */;
+			buildPhases = (
+				BCA04B232AF0487CA3F13412E719C143 /* Headers */,
+				5C14277E551EB3B430CDA36A90C552EE /* Sources */,
+				142AE6EB8407191844074817A18C2723 /* Frameworks */,
+				DCC251FBD2AD9081B36120C436790BEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCL;
+			productName = ARCL;
+			productReference = C7ADEE321186A59406F16630332B9832 /* ARCL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7A22C2B7FA56F932CC50AA406EA2F0A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */,
+				B34AFA0703DE753BC623B15919F816DC /* Pods-SecretMessage */,
+				05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		614257DC32F66DDBBD97A53DE3BD155D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859C8E8E4FAA8DADC5BD9446520301C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC251FBD2AD9081B36120C436790BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1960E6A7960A7B2EA1A0C5FE6E72DF67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6843C7882EF12C9D152AAB3E48C64A4 /* Pods-SecretMessage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C14277E551EB3B430CDA36A90C552EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61056C6EFFF75EB7F6B6F09C9497BD60 /* ARCL-dummy.m in Sources */,
+				C90E2A2B47EE101E2B491A592DC42137 /* ARKit_CoreLocation.swift in Sources */,
+				BF52365B4F8F2C456C5F8251FE0E7577 /* AttributedType.swift in Sources */,
+				04208E574B8A3FBEB914F997509C5299 /* BaseTypes+Extensions.swift in Sources */,
+				7BD57C52C8BE3A84AA0B2EBFAE0D9704 /* CGPoint+Extensions.swift in Sources */,
+				4F320F5D6C312452A344A64421EDE07E /* CLLocation+Extensions.swift in Sources */,
+				7BA73522DF205C8C8123142B55A66EE2 /* FloatingPoint+Radians.swift in Sources */,
+				066FD08EF5D9078C9E733D2DFF581651 /* LocationAnnotationNode.swift in Sources */,
+				4AAE0F3B409B86906FF07BB9B7AD995D /* LocationManager.swift in Sources */,
+				F812FD15FA459C7339E47E72A9691C6F /* LocationNode.swift in Sources */,
+				D871152B03BA39E280878D06BB3DBFBA /* PolylineNode.swift in Sources */,
+				752831D33A377197EB5026D4D597B60B /* ScalingScheme.swift in Sources */,
+				175518AB4723AA996812B2F20760A158 /* SceneLocationEstimate+Extensions.swift in Sources */,
+				6841F73E84D853E5D8D167C735908F74 /* SceneLocationEstimate.swift in Sources */,
+				CCE20801F233D2A46FAF52EB54EA62D0 /* SceneLocationManager.swift in Sources */,
+				41BE9347A5E9DD88A94C29A25193FAE6 /* SceneLocationView+ARSCNViewDelegate.swift in Sources */,
+				B17AF6BEC2C03C7D8817BDC77D0ABCC8 /* SceneLocationView.swift in Sources */,
+				49A3EE3048F4C134E58733507823B611 /* SceneLocationViewEstimateDelegate.swift in Sources */,
+				41F024CE6F5E5CC67308ADD03CB4EEB9 /* SCNNode+Extensions.swift in Sources */,
+				7C781B781A43BF12E389B0E56F8B02B0 /* SCNVector3+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEEEB8560A2AE3CD4C881C83C69E384E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6820B3638809F3914194216BB5A3C2A2 /* RNCryptor-dummy.m in Sources */,
+				275ABEB51B3E6CFB1F99DC846CF08578 /* RNCryptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60D6C257FA7FA1AD8D49BAC8582D46D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARCL;
+			target = BB32E97F940371D391F6B8FB4F24AC15 /* ARCL */;
+			targetProxy = 9F7B4D7D96C8C65AFB261AE75ECDA8BB /* PBXContainerItemProxy */;
+		};
+		D1B418CA0B2D4671056BC4B352905375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RNCryptor;
+			target = 05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */;
+			targetProxy = 82B894AC98F352E73542A92595A45700 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7BDD6D85AA62EC4645FC83ED2FDB1247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89274800D96A2C82315A3935F15BB105 /* ARCL.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARCL/ARCL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARCL/ARCL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARCL/ARCL.modulemap";
+				PRODUCT_MODULE_NAME = ARCL;
+				PRODUCT_NAME = ARCL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CA5C8FFC46FFCF7A1668944A693C7B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2341D35D7242F3EE15AB4B415BDC13D5 /* RNCryptor.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/RNCryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				PRODUCT_MODULE_NAME = RNCryptor;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B776DB8460D5EB16EC633A3B0C052056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72052D3FEAE977A3A21F083046D8012C /* ARCL.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARCL/ARCL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARCL/ARCL-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ARCL/ARCL.modulemap";
+				PRODUCT_MODULE_NAME = ARCL;
+				PRODUCT_NAME = ARCL;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE73D6CD1C3896EA28C80C06CEFD5FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF0ECFA230F630788132610DBE58EB9 /* RNCryptor.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/RNCryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				PRODUCT_MODULE_NAME = RNCryptor;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D23E437BE5B416A4DBA528B65CF20964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4E66365E434748EE3EECC3FCD5AEA3 /* Pods-SecretMessage.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecretMessage/Pods-SecretMessage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecretMessage/Pods-SecretMessage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF4B8BB1CDD542887A1B1C3A7E512FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7B22B0CE6D594F10E675DA744A9F86 /* Pods-SecretMessage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecretMessage/Pods-SecretMessage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecretMessage/Pods-SecretMessage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244C8495B4807405AC4E43E3331BC3A5 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE73D6CD1C3896EA28C80C06CEFD5FE8 /* Debug */,
+				7CA5C8FFC46FFCF7A1668944A693C7B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4199054F06045DD4CBB6EB6BBC98EA5D /* Build configuration list for PBXNativeTarget "Pods-SecretMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4B8BB1CDD542887A1B1C3A7E512FB3 /* Debug */,
+				D23E437BE5B416A4DBA528B65CF20964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658276A62EBF92155929002D7710C1C3 /* Build configuration list for PBXNativeTarget "ARCL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDD6D85AA62EC4645FC83ED2FDB1247 /* Debug */,
+				B776DB8460D5EB16EC633A3B0C052056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
